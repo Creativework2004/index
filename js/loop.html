@@ -10,12 +10,39 @@
             *{
                 box-sizing:border-box;
             }
+
+            #image
+            {
+                width:400px;
+                margin:auto;
+                height:80px;
+                //margin-top:100px;
+                z-index:5;
+            }
+
+            .pic
+            {
+                width:402px;
+                margin:auto;
+            }
+
+            #type
+            {
+                width:100%;
+                //background:red;
+                text-align:center;
+                margin-top:30px;
+                //margin-lift:300px;
+                //margin:auto;
+            }
+
             #main{
-                width:100;
+                width:380px;
                 height:500px;
                 //border:1px black solid;
                 padding:10px;
                 text-align:center;
+                margin:auto;
             }
             label{margin:2px}
             #output{width:100%;
@@ -23,17 +50,28 @@
         //border:1px black solid;
     margin-top:5px;
 padding:2px;
-font-size:28px;
+font-size:25px;
 color:red;
 font-family:arial black;
 text-shadow:5px 5px 5px gray;
 }
         </style>
 
+        <div id="image">
+            <img src="imagejs/board.jpg" class="pic">
+        </div>
+        
+
         <div id="main">
-         <div><label>Type No</label><input id="userinput" type="number" min="2" max="900"><button id="mybutton">Create</button></div>
+         <div><label>Type No</label><input id="userinput" type="number" min="2" max="900"></div>
          <div id="output"></div>
         </div>
+
+        <div id="type">
+            
+Type the number of whose tables you want to know in the search box above.
+        </div>
+        
 
         <script>
 
